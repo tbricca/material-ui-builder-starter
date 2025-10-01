@@ -1,0 +1,107 @@
+{
+  "rules": [
+    {
+      "name": "Material UI Components",
+      "description": "Use Material-UI components with custom theme",
+      "pattern": "*.tsx",
+      "instructions": [
+        "Import MUI components from @mui/material",
+        "Use theme.vars for color values with dark mode support",
+        "Follow responsive design patterns with breakpoints (xs, sm, md, lg, xl)",
+        "Apply TypeScript types for all component props"
+      ]
+    },
+    {
+      "name": "Component Structure",
+      "description": "Organize components following project structure",
+      "pattern": "src/components/**/*.tsx",
+      "instructions": [
+        "Place reusable components in src/components/",
+        "Dashboard components go in src/dashboard/components/",
+        "CRM components go in src/crm/components/",
+        "Reference example patterns in example-code/pages/"
+      ]
+    },
+    {
+      "name": "Theme and Styling",
+      "description": "Apply consistent theming across the app",
+      "pattern": "**/*.tsx",
+      "instructions": [
+        "Use shared theme from src/shared-theme/AppTheme.tsx",
+        "Apply custom theme extensions from src/dashboard/theme/customizations/",
+        "Use sx prop for component-specific styles",
+        "Follow Material-UI theming best practices"
+      ]
+    },
+    {
+      "name": "Form Patterns",
+      "description": "Implement forms with validation",
+      "pattern": "**/forms/**/*.tsx",
+      "instructions": [
+        "Use TextField, Select, DatePicker from MUI",
+        "Implement real-time validation with error states",
+        "Show loading states during submission",
+        "Reference forms-example.tsx for validation patterns"
+      ]
+    },
+    {
+      "name": "Data Tables",
+      "description": "Build tables with CRUD operations",
+      "pattern": "**/tables/**/*.tsx",
+      "instructions": [
+        "Use Material-UI Table components",
+        "Implement sorting, filtering, and pagination",
+        "Add CRUD operations with dialogs",
+        "Reference tables-example.tsx for table patterns"
+      ]
+    },
+    {
+      "name": "Dashboard Layouts",
+      "description": "Create responsive dashboard layouts",
+      "pattern": "**/dashboard/**/*.tsx",
+      "instructions": [
+        "Use Grid system for responsive layouts",
+        "Implement StatCard pattern for metrics display",
+        "Add charts using Material-UI X Charts",
+        "Reference dashboard-example.tsx for layout patterns"
+      ]
+    },
+    {
+      "name": "Responsive Design",
+      "description": "Ensure mobile-first responsive design",
+      "pattern": "**/*.tsx",
+      "instructions": [
+        "Start with mobile design (xs breakpoint)",
+        "Use Material-UI breakpoints: xs (0px), sm (600px), md (900px), lg (1200px), xl (1536px)",
+        "Apply responsive Grid column spans",
+        "Reference layouts-example.tsx for responsive patterns"
+      ]
+    },
+    {
+      "name": "TypeScript Types",
+      "description": "Use proper TypeScript typing",
+      "pattern": "**/*.tsx",
+      "instructions": [
+        "Import types from src/types/",
+        "Define interfaces for component props",
+        "Use proper type annotations for state and functions",
+        "Avoid using 'any' type"
+      ]
+    }
+  ],
+  "excludePatterns": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".git/**",
+    "*.test.tsx",
+    "*.spec.tsx"
+  ],
+  "preferences": {
+    "framework": "React",
+    "language": "TypeScript",
+    "uiLibrary": "Material-UI",
+    "stateManagement": "React Query",
+    "styling": "Material-UI sx prop"
+  }
+}
